@@ -1,15 +1,19 @@
 'use strict';
 import express from 'express';
 import mongoose from 'mongoose';
+import path from 'path';
 import bodyParser from 'body-parser';
 import router from './routes/index';
 import jwtToken from './auth/auth';
+import dotenv from 'dotenv';
+
+dotenv.config({path: path.join(__dirname, '.env')})
 
 const app = express();
 const port = process.env.port || 4040;
 
 // Connecting to the database
-const db = mongoose.connect(process.env.DB_ADDRESS || 'mongodb://demo:demo%40123@ds225703.mlab.com:25703/battledb');
+const db = mongoose.connect(process.env.DB_ADDRESS);
 
 
 // setting body parser middleware 
