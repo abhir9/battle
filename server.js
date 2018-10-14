@@ -10,7 +10,6 @@ import dotenv from 'dotenv';
 dotenv.config({path: path.join(__dirname, '.env')})
 
 const app = express();
-const port = process.env.port || 4040;
 
 // Connecting to the database
 const db = mongoose.connect(process.env.DB_ADDRESS);
@@ -37,6 +36,6 @@ process.on('unhandledRejection', (reason, p) => {
 });
 
 // Running the server
-app.listen(port, () => {
-    console.log(`http://localhost:${port}`)
+app.listen(process.env.port, () => {
+    console.log(`http://localhost:${process.env.port}`)
 })
