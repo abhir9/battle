@@ -1,0 +1,28 @@
+{
+  "name": "Battle_API",
+  "version": "1.0.0",
+  "description": "API for battle data",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhir9/battle"
+  },
+  "author": "Abhimanyu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "dotenv": "5.0.0",
+    "express": "4.16.2",
+    "jsonwebtoken": "8.3.0",
+    "mongoose": "5.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-stage-3": "6.22.0",
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-es2015-node5": "*",
+    "babel-register": "*"
+  }
+}
