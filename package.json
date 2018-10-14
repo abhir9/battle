@@ -17,7 +17,7 @@
     "express": "4.16.2",
     "jsonwebtoken": "8.3.0",
     "mongoose": "5.0.1",
-    "nodemon": "1.18.4"
+    "nodemon": "1.18.4",
     "babel-preset-stage-3": "6.22.0",
     "babel-cli": "*",
     "babel-core": "*",
