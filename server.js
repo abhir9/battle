@@ -6,7 +6,7 @@ import router from './routes/index';
 import jwtToken from './auth/auth';
 
 const app = express();
-const port = process.env.PORT || 4040;
+const port = process.env.port || 4040;
 
 // Connecting to the database
 const db = mongoose.connect(process.env.DB_ADDRESS || 'mongodb://demo:demo%40123@ds225703.mlab.com:25703/battledb');
