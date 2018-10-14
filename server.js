@@ -36,6 +36,6 @@ process.on('unhandledRejection', (reason, p) => {
 });
 
 // Running the server
-app.listen(process.env.port, () => {
-    console.log(`http://localhost:${process.env.port}`)
+app.listen(process.env.PORT, () => {
+    console.log(`http://localhost:${process.env.PORT}`)
 })
