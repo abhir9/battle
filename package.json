@@ -1,27 +1,14 @@
 {
-  "name": "Battle_API",
+  "name": "asdf",
   "version": "1.0.0",
-  "description": "API for battle data",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/abhir9/battle"
-  },
-  "author": "Abhimanyu",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "1.18.2",
-    "dotenv": "5.0.0",
-    "express": "4.16.2",
-    "jsonwebtoken": "8.3.0",
-    "mongoose": "5.0.1",
-    "nodemon": "1.18.4",
-    "babel-preset-stage-3": "6.22.0",
-    "babel-cli": "*",
-    "babel-core": "*",
-    "babel-preset-es2015-node5": "*",
-    "babel-register": "*"
+    "puppeteer": "^9.1.1"
   }
 }
